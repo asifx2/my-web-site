@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- The CSS from the next section goes here -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <header class="chat-header">
+            <h2>Public Chat</h2>
+            <div id="user-info">Connecting...</div>
+        </header>
+        
+        <!-- Loading Indicator -->
+        <div id="loader">
+            <div class="spinner"></div>
+            <p>Connecting to chat...</p>
+        </div>
+
+        <!-- Messages Display -->
+        <main class="chat-messages" id="chat-messages">
+            <!-- Messages will be dynamically inserted here -->
+        </main>
+
+        <!-- Message Input Form -->
+        <footer class="chat-input-form-container">
+            <form class="chat-input-form" id="chat-form">
+                <input type="text" id="message-input" class="chat-input" placeholder="Aa" autocomplete="off">
+                <button type="submit" class="send-button" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"></path></svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <!-- The JavaScript from the final section goes here -->
+    <!-- <script type="module" src="app.js"></script> -->
+</body>
+</html>
